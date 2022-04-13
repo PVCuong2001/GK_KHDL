@@ -1,12 +1,15 @@
 
+# importing pandas library
+import pandas as pd
+# import matplotlib library
 import matplotlib.pyplot as plt
- 
- 
-x =['5', '7', '8', '7', '2', '17']
- 
-y =[99, 86, 87, 88, 100, 86]
- 
-plt.scatter(x, y, c ="blue")
- 
-# To show the plot
-plt.show()
+  
+# creating dataframe
+df = pd.DataFrame({
+    'Name': ['John', 'Sammy', 'Joe'],
+    'Age': [45, 38, 90],
+    'Height(in cm)': [150, 180, 160]
+})
+df
+# plotting graph
+# df.plot(x="Name", y=["Age", "Height(in cm)"], kind="bar")
